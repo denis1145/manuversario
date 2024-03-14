@@ -27,7 +27,7 @@ body {
     background-size: contain; /* Redimensiona a imagem para caber inteiramente dentro do elemento pai */
     background-position: top; /* Coloca a imagem no topo */
     width: 100%;
-    height: 60px; /* Define a altura desejada */
+    height: 11vw; /* Define a altura desejada */
     position: fixed;
     top: 0;
     left: 0;
