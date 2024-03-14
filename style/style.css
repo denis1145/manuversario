@@ -1,0 +1,264 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'defontes';
+    src: url('../ribbon.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.gif-header {
+    background-image: url('../imagens/cruzontes.gif'); 
+    background-size: contain; /* Redimensiona a imagem para caber inteiramente dentro do elemento pai */
+    background-position: top; /* Coloca a imagem no topo */
+    width: 100%;
+    height: 100px; /* Define a altura desejada */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; 
+}
+
+/* Classe para a barrinha de gif em telas menores */
+.gif-header-mobile {
+    background-image: url('../imagens/cruzontes.gif'); 
+    background-size: contain; /* Redimensiona a imagem para caber inteiramente dentro do elemento pai */
+    background-position: top; /* Coloca a imagem no topo */
+    width: 100%;
+    height: 60px; /* Define a altura desejada */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; 
+}
+
+h1 {
+    font-family: 'defontes', Arial, sans-serif;
+    color: white;
+    margin-top: 150px; 
+    font-size: 14vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    padding-top: 150px;
+}
+
+/* Media query para dispositivos mÃ³veis */
+@media screen and (max-width: 767px) {
+    h1 {
+        margin-top: -22vw; /* Ajuste a margem conforme necessÃ¡rio para aproximar o texto da barrinha de gif */
+    }
+    .custom-image {
+        width: 50vw; /* Largura da imagem */
+        height: auto; /* Altura automÃ¡tica para manter a proporÃ§Ã£o */
+        border-radius: 50%; /* Borda circular */
+    }
+    .audio-image {
+        width: 50vw; /* Largura da imagem */
+        height: auto; /* Altura automÃ¡tica para manter a proporÃ§Ã£o */
+        border-radius: 50%; /* Borda circular */
+        margin-top: 10vw; 
+    }
+    .custom-button {
+        width: 150px; /* Largura desejada */
+        height: 150px; /* Altura desejada */
+        border-radius: 50%; /* Borda circular */
+        background-color: #ffffff; /* Cor de fundo */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+        cursor: pointer; /* Altera o cursor ao passar por cima */
+        transition: all 0.3s ease; /* Adiciona uma transiÃ§Ã£o suave */
+        margin-top: 10vw;
+    }
+    
+    .custom-button:hover {
+        
+        transform: scale(1.15); /* Efeito de escala ao passar por cima */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra aumentada */
+    }
+    .hello-kitty-container {
+        height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+    }
+    
+    .hello-kitty-image {
+        max-width: 100%; /* Garante que a largura da imagem nÃ£o ultrapasse a largura do contÃªiner */
+        max-height: 100%; /* Garante que a altura da imagem nÃ£o ultrapasse a altura do contÃªiner */
+    }
+    
+}
+
+.custom-button {
+    width: 150px; /* Largura desejada */
+    height: 150px; /* Altura desejada */
+    border-radius: 50%; /* Borda circular */
+    background-color: #ffffff; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: all 0.3s ease; /* Adiciona uma transiÃ§Ã£o suave */
+    margin-top: 10vw;
+}
+
+.custom-button:hover {
+    
+    transform: scale(1.15); /* Efeito de escala ao passar por cima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra aumentada */
+}
+p {
+    color: white;
+    font-size: 5vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.background1 {
+    background-image: url('../imagens/fundo1.jpg');
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a Ã¡rea disponÃ­vel */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+    background-position: center center; /* Centraliza a imagem de fundo *//
+}
+
+.background2 {
+    background-image: url('../imagens/deftones.jpg');
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a Ã¡rea disponÃ­vel */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+    background-position: center center; /* Centraliza a imagem de fundo */
+}
+
+.spotify-audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.spotify-audio::-webkit-media-controls-panel {
+    background-color: #1DB954;
+    border-radius: 10px;
+}
+
+.spotify-audio::-webkit-media-controls-play-button,
+.spotify-audio::-webkit-media-controls-volume-slider {
+    display: none !important;
+}
+
+.spotify-audio::-webkit-media-controls-current-time-display,
+.spotify-audio::-webkit-media-controls-time-remaining-display {
+    color: #000000;
+}
+
+.spotify-audio::-webkit-media-controls-timeline,
+.spotify-audio::-webkit-media-controls-seek-back-button,
+.spotify-audio::-webkit-media-controls-seek-forward-button {
+    color: #000000;
+}
+
+.spotify-audio::-webkit-media-controls-play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1ED760;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.spotify-audio::-webkit-media-controls-play-button::before {
+    content: "\25B6";
+    font-size: 20px;
+    color: #000000;
+}
+
+
+
+.confetti {
+    width: 10px; /* Largura do confete */
+    height: 10px; /* Altura do confete */
+    background-color: #FFC0CB; /* Cor do confete rosa */
+    position: fixed;
+    animation: fall 4s ease-out infinite; /* AnimaÃ§Ã£o de queda */
+}
+
+
+/* AnimaÃ§Ã£o para fazer os confetes caÃ­rem */
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+
+
+
+
+.hello-kitty-container {
+    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+}
+
+.hello-kitty-image {
+    max-width: 100%; /* Garante que a largura da imagem nÃ£o ultrapasse a largura do contÃªiner */
+    max-height: 100%; /* Garante que a altura da imagem nÃ£o ultrapasse a altura do contÃªiner */
+}
+
+/* Classe para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+
+.new-background {
+    background-image: url('/imagens/hellokitybackground.jpg');
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center center; /* Centraliza a imagem */
+}
+
+.hello-kitty-container p {
+    color: rgb(240, 0, 108);
+    font-size: 19vw;
+    font-family: 'defontes';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto */
+    margin-top: 1vw; /* Ajusta o espaÃ§amento superior do texto */
+}
+
+.audio-container {
+    position: relative;
+}
+
+.custom-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Certifique-se de que o botÃ£o esteja acima da barra de controle */
+}
+
+.audio-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw; /* Largura do botÃ£o */
+    height: 50vw; /* Altura do botÃ£o */
+    background-color: rgba(255, 255, 255, 0); /* Cor de fundo com transparÃªncia */
+    border: none; /* Remove a borda */
+    border-radius: 50%; /* Transforma o botÃ£o em um cÃ­rculo */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    z-index: 999; /* Garante que o botÃ£o fique sobreposto Ã  imagem */
+}
+
+.play-button {
+    font-size: 0; /* Torna o texto "Play" invisÃ­vel */
+}
+
+.play-button.pause {
+    font-size: 0; /* Torna o texto "Pause" invisÃ­vel */
+}
