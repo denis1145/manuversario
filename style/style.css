@@ -63,6 +63,20 @@ h1 {
         border-radius: 50%; /* Borda circular */
         margin-top: 10vw; 
     }
+    /* Adiciona a animação de rotação à classe .rotate */
+.rotate {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
     .custom-button {
         width: 150px; /* Largura desejada */
         height: 150px; /* Altura desejada */
@@ -73,12 +87,26 @@ h1 {
         transition: all 0.3s ease; /* Adiciona uma transiÃ§Ã£o suave */
         margin-top: 10vw;
     }
-    
     .custom-button:hover {
         
         transform: scale(1.15); /* Efeito de escala ao passar por cima */
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra aumentada */
     }
+    /* Adiciona a animação de rotação à classe .rotate */
+.rotate {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+    
     .hello-kitty-container {
         height: 100vh; /* Define a altura para ocupar toda a altura da tela */
     }
@@ -262,3 +290,4 @@ p {
 .play-button.pause {
     font-size: 0; /* Torna o texto "Pause" invisÃ­vel */
 }
+
